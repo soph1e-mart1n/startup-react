@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CS Girly Dress-Up</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <!-- Tell browsers not to scale the viewport automatically -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Girly</title>
+  <link rel="icon" href="assets/favicon.jpg" />
+  <link rel="stylesheet" href="customize.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="customize.html">Character</a>
+    <a href="game.html">Game</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+  <div class="players">
+    Player
+    <span class="player-name"></span>
+    <div id="player-messages"></div>
+  </div>
+
+  <div class="top">
+    <div class="score">
+      <span id="coins">0</span>
+      <span><img id="girlCoin"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Coin.png"></span>
+    </div>
+    <div class = submit>
+      <button class="btn btn-lg" id="submit_button" type="button">Submit</button>
+    </div>
+  </div> 
+
+  <div class="buttons">
+    <ul>
+      <li><button class="btn btn-lg" id="skin_button" type="button">Skin</button></li>
+      <li><button class="btn btn-lg" id="hair_button" type="button">Hair</button></li>
+      <li><button class="btn btn-lg" id="face_button" type="button">Face</button></li>
+      <li><button class="btn btn-lg" id="shirt_button" type="button">Top</button></li>
+      <li><button class="btn btn-lg" id="pant_button" type="button">Bottom</button></li>
+      <li><button class="btn btn-lg" id="shoes_button" type="button">Shoes</button></li>
+
+    </ul>
+  </div>
+
+  <div class="hairs" id="hairs_obj">
+    <img id="hair1" class="hair"
+      src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Hair1Brown.png" />
+    <img id="hair2" class="hair"
+      src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Hair2Brown.png" />
+    <img id="hair3" class="hair"
+      src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Hair3Brown.png" />
+    <img id="hair4" class="hair"
+      src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Hair4Brown.png" />
+    <img id="hair5" class="hair"
+      src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Hair5Brown.png" />
+
+  </div>
+
+  <div class="girly">
+
+    <div class="skin">
+      <img class="character"
+        src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Fem1.png" />
+      <img class="character"
+        src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Fem2.png" />
+      <img class="character"
+        src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Fem3.png" />
+      <img class="character"
+        src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Fem4.png" />
+      <img class="character"
+        src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Fem5.png" />
+    </div>
+
+    <div class="faces">
+      <img class="face" src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Face1.png" />
+      <img class="face" src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Face2.png" />
+      <img class="face" src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Face3.png" />
+      <img class="face" src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Face4.png" />
+      <img class="face" src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Face5.png" />
+    </div>
+
+    <div class="clothes">
+      <div class="tops">
+        <img id="top1" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/BYUSweatShirt.png" />
+        <img id="top2" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/ComputerScienceShirt.png" />
+        <img id="top3" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/GreenStripeShirt.png" />
+        <img id="top4" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Overalls.png" />
+        <img id="top5" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/PinkShirt.png" />
+        <img id="top6" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/PinkShirt2.png" />
+        <img id="top7" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/SkullShirt.png" />
+        <img id="top8" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/TurtleNeck.png" />
+        <img id="top9" class="shirt"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/WhiteShirt.png" />
+      </div>
+
+      <div class="pants">
+        <img id="bottom1" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/DarkBluePants.png" />
+        <img id="bottom2" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/GreenShorts.png" />
+        <img id="bottom3" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Jeans.png" />
+        <img id="bottom4" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/LightBluePants.png" />
+        <img id="bottom5" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/PurpleSkirt.png" />
+        <img id="bottom6" class="pant"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/ShortSkirt.png" />
+      </div>
+
+      <div class="shoes">
+        <img id="shoe1" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/BlackShoes.png" />
+        <img id="shoe2" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Boots.png" />
+        <img id="shoe3" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Converse.png" />
+        <img id="shoe4" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/RedShoes.png" />
+        <img id="shoe5" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/Socks.png" />
+        <img id="shoe6" class="shoe"
+          src="https://raw.githubusercontent.com/soph1e-mart1n/startup/main/public/assets/YellowShoes.png" />
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="https://github.com/soph1e-mart1n/startup.git">GitHub</a>
+  </div>
+  <script type="text/javascript" src="customize.js"></script>
+</body>
+
+</html>

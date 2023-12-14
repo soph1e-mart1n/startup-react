@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>CS Girly - Memory Game</title>
+    <link rel="icon" href="assets/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="customize.html">Character</a>
+        <a href="game.html">Game</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            <span class="moves">0</span> Moves
+
+            <div id="timer">00:00:00</div>
+
+            <div class="restart">
+                <button type="button" class="btn btn-info btn-sm">
+                    <i class="fa fa-repeat"></i>
+                </button>
+            </div>
+        </section>
+
+        <ul class="deck">
+            <li class="card">
+                <i class="fa fa-gem"></i>
+            </li>
+            <li class="card">
+                <i class="fa-regular fa-face-smile-beam"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-gamepad"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-person-dress"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-face-kiss-wink-heart"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-gamepad"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-laptop-code"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-piggy-bank"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-gem"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-ice-cream"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-laptop-code"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-ice-cream"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-person-dress"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-piggy-bank"></i>
+            </li>
+            <li class="card">
+                <i class="fa-regular fa-face-smile-beam"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-face-kiss-wink-heart"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="winPage closed">
+        <h1>Congratulations!</h1>
+        <p>You have finished the game with <span class="movesCount">0</span> Moves and <span class="starsCount">0</span>
+            Stars.</p>
+        <p>Your time: <span class="finalTime"></span></p>
+        <p>You have earned <span class="coinsCount">0</span> Coins. </p>
+        <p>Wanna play again?</p>
+        <button type="button" role="button" class="playAgain btn btn-info">Play again!</button>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/soph1e-mart1n/startup.git">GitHub</a>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>

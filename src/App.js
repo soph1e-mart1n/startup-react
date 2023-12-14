@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { Login } from './login/login';
+import { Customize } from './customize/customize';
+import { Game } from './game/game';
+import { Gallery } from './gallery/gallery';
+import './App.scss';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <div className='navbar' id='navbar'>
+          <a>
+            <NavLink to=''>
+              Home
+            </NavLink>
+          </a>
+          <a>
+            <NavLink to='customize'>
+              Customize
+            </NavLink>
+          </a>
+          <a>
+            <NavLink to='game'>
+              Game
+            </NavLink>
+          </a>
+          <a>
+            <NavLink to='gallery'>
+              Gallery
+            </NavLink>
+          </a>
+        </div>
+
+        <Routes>
+          <Route path='/' element={<Login />} exact />
+          <Route path='/customize' element={<Customize />} />
+          <Route path='/game' element={<Game />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='*' element={<Login />} />
+        </Routes>
+
+        <footer className="footer">
+          <a href="https://github.com/soph1e-mart1n/startup.git">GitHub</a>
+        </footer>
+      </div>
+    </BrowserRouter>
   );
 }
 

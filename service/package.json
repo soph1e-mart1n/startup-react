@@ -1,0 +1,22 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Most people majoring in computer science can agree that they can barely take care of themselves. Well, with CS Girly, you can take care of a computer science major even if it isn't yourself! Each user can log in, take care of their Girly, and play games to earn GirlCoins. GirlCoins can be spent to customize your Girly. You want her to look the best she can, because other users will be able to view your Girly in realtime!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cartoon-avatar": "^1.0.2",
+    "compass-mixins": "^0.12.12",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
+  }
+}

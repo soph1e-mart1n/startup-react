@@ -1,0 +1,423 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #facdf3;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+#count {
+  color: rgb(246, 239, 158);
+}
+
+.players {
+  flex: 1;
+  width: 100%;
+  padding: 0.5em;
+  overflow-y: auto;
+  max-height: 4em;
+  margin-bottom: 1%;
+}
+
+.player-name {
+  color: rgb(118, 190, 210);
+}
+
+#player-messages {
+  padding-top: 0.25em;
+  opacity: 0.7;
+}
+
+.event {
+  color: rgb(69, 69, 69);
+}
+
+.player-event {
+  color: rgb(165, 220, 235);
+}
+
+.system-event {
+  color: rgb(221, 148, 40);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+  width: 100%;
+  justify-content: center;
+}
+
+.submit {
+  margin-left: 1%;
+}
+
+.submit button {
+  background: #d611ba;
+  border-color: #d611ba;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.score {
+  outline-width: 5px;
+  outline-style: solid;
+  outline-color: #d611ba;
+  border-radius: 5px;
+  border-color: #d611ba;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-right: 1%;
+  height: auto;
+  min-width: 7%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.score #girlCoin {
+  position: relative;
+  width: auto;
+  height: 18px;
+}
+
+.buttons ul {
+  width: 100%;
+  padding: 0 0 0 0;
+  list-style-type: none;
+}
+
+.buttons li {
+  display: inline-block;
+}
+
+.buttons button {
+  background: #46a9e6;
+  border-color: #46a9e6;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.girly {
+  margin-top: 2%;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-left: 4%;
+}
+
+.skin {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.skin .character {
+  visibility: hidden;
+  width: 10%;
+  z-index: -1000;
+}
+
+.faces {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.faces .face {
+  visibility: hidden;
+  width: 8%;
+  padding-left: 2%;
+  padding-top: 0.15%;
+  z-index: -900;
+}
+
+.girly .clothes {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tops {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.tops .shirt {
+  visibility: hidden;
+  z-index: 2;
+}
+
+.tops #top1 {
+  padding-top: 3.6%;
+  padding-left: 1%;
+  width: 9%;
+}
+
+.tops #top2 {
+  padding-top: 4.3%;
+  padding-left: 1.75%;
+  width: 8.3%;
+}
+
+.tops #top3 {
+  padding-top: 4%;
+  padding-left: 1.6%;
+  width: 8.4%;
+}
+
+.tops #top4 {
+  padding-top: 3.96%;
+  padding-left: 1.17%;
+  width: 8.85%;
+}
+
+.tops #top5 {
+  padding-top: 4%;
+  padding-left: 1.6%;
+  width: 8.4%;
+}
+
+.tops #top6 {
+  padding-top: 4.2%;
+  padding-left: 1.8%;
+  width: 8.3%;
+}
+
+.tops #top7 {
+  padding-top: 3.75%;
+  padding-left: 1.7%;
+  width: 8.4%;
+}
+
+.tops #top8 {
+  padding-top: 3.3%;
+  padding-left: 0.5%;
+  width: 9.5%;
+}
+
+.tops #top9 {
+  padding-top: 4.1%;
+  padding-left: 1.8%;
+  width: 8.2%;
+}
+
+.pants {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.pants .pant {
+  visibility: hidden;
+  z-index: 1;
+}
+
+.pants #bottom1 {
+  padding-top: 10.8%;
+  padding-left: 2.15%;
+  width: 7.85%;
+}
+
+.pants #bottom2 {
+  padding-top: 10.8%;
+  padding-left: 2.15%;
+  width: 7.85%;
+}
+
+.pants #bottom3 {
+  padding-top: 11.1%;
+  padding-left: 2.15%;
+  width: 7.85%;
+}
+
+.pants #bottom4 {
+  padding-top: 10.5%;
+  padding-left: 2.15%;
+  width: 7.95%;
+}
+
+.pants #bottom5 {
+  padding-top: 10.8%;
+  padding-left: 2.15%;
+  width: 7.85%;
+}
+
+.pants #bottom6 {
+  padding-top: 10%;
+  padding-left: 1.9%;
+  width: 8.3%;
+}
+
+.shoes {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.shoes .shoe {
+  visibility: hidden;
+  z-index: 3;
+}
+
+.shoes #shoe1 {
+  padding-top: 21.5%;
+  padding-left: 2.85%;
+  width: 7.2%;
+}
+
+.shoes #shoe2 {
+  padding-top: 20.7%;
+  padding-left: 2.5%;
+  width: 7.5%;
+}
+
+.shoes #shoe3 {
+  padding-top: 22.7%;
+  padding-left: 2.9%;
+  width: 7.1%;
+}
+
+.shoes #shoe4 {
+  padding-top: 23.7%;
+  padding-left: 3%;
+  width: 7%;
+}
+
+.shoes #shoe5 {
+  padding-top: 23%;
+  padding-left: 3%;
+  width: 7%;
+}
+
+.shoes #shoe6 {
+  padding-top: 23.2%;
+  padding-left: 3%;
+  width: 7%;
+}
+
+.hairs {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.hairs .hair {
+  visibility: hidden;
+  z-index: 4;
+  margin-left: 2.25%;
+}
+
+.hairs #hair1 {
+  padding-top: 1.5%;
+  padding-left: 3.05%;
+  width: 6.95%;
+}
+
+.hairs #hair2 {
+  padding-top: 1%;
+  padding-left: 3.2%;
+  width: 6.8%;
+}
+
+.hairs #hair3 {
+  padding-top: 1.65%;
+  padding-left: 3.2%;
+  width: 6.8%;
+}
+
+.hairs #hair4 {
+  padding-top: 1.7%;
+  padding-left: 2.8%;
+  width: 7.4%;
+}
+
+.hairs #hair5 {
+  padding-top: 0.8%;
+  padding-left: 2%;
+  width: 8.2%;
+}
+
+/*Nav bar CSS*/
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #d611ba;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #f2f2f2;
+  color: #d611ba;
+}
+
+/*Nav bar CSS*/
+/* The navigation bar */
+.footer {
+  overflow: hidden;
+  background-color: #d611ba;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.footer a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.footer a:hover {
+  background: #f2f2f2;
+  color: #d611ba;
+}
